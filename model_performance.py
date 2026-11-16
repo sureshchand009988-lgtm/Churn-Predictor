@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import pickle
 import os
-import ZipFile
+import zipfile
 st.title(":material/analytics: Model Performance")
 st.set_page_config(
     page_title="Model Performance",
