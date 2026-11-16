@@ -6,3 +6,4 @@ imbalanced-learn
 matplotlib
 seaborn
 xgboost
+mysql-connector-python
