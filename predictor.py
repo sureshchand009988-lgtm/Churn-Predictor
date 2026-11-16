@@ -124,7 +124,6 @@ if(button):
                 st.success("Customer not leave the platform!")
                 st.subheader("The Probablity of Customer Leaving")
                 prediction = "customer not churn"
-                st.write(f"Probablity : {threshold : .1f}%")
         st.write(f"Probablity : {threshold : .1f}%")
         if(threshold <= 35):
                 st.markdown("Customer Leaving Chance : low 🟢")
