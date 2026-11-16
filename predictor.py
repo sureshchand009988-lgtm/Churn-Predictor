@@ -12,7 +12,7 @@ st.set_page_config(
     layout = 'wide'
 )
 model_path = os.path.join(os.path.dirname(__file__),'customer_churn_predict.zip')
-with zipfile.ZipFile(model_path, 'r') as z:an 
+with zipfile.ZipFile(model_path, 'r') as z:
     pkl_file = [f for f in z.namelist() if f.endswith('.pkl')][0]
 with open(pkl_file,'rb') as file:
     model = pickle.load(file)
