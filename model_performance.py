@@ -5,14 +5,16 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import streamlit as st
-import pickle 
+import pickle
+import os
 st.title(":material/analytics: Model Performance")
 st.set_page_config(
     page_title="Model Performance",
     layout="wide"
 )
 #model
-with open(r"C:\Users\chato\Downloads\customer_churn_predict.pkl",'rb') as file:
+model_path = os.path.join(os.path.dirname(__file__),'..',r"C:\Users\chato\Downloads\customer_churn_predict.zip")
+with open(model_path,'rb') as file:
     model = pickle.load(file)
 
 #model performance
