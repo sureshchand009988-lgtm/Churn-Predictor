@@ -55,12 +55,11 @@ with st.expander("About the different parameter in the prediction"):
 - **Marketing Segment:** Category assigned to the customer for marketing and analysis purposes.
 - **Favorite Color:** Customer's preferred color, included as a categorical feature in the prediction model.
 - **Lucky Number:** Customer's selected number, included as a numerical feature in the prediction model.''')
-
-conn = mysql.connector.connect(
+ conn = mysql.connector.connect(
     host="gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com",
     port=4000,
     user="p87ceBtqWrpZJew.root",
-    password="YOUR_ACTUAL_TIDB_PASSWORD",
+    password="zMqgK4ytABjAPdU3",
     database="customer_churn",
     ssl_ca="/etc/ssl/certs/ca-certificates.crt",
     ssl_verify_cert=True,
