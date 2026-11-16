@@ -93,7 +93,7 @@ with col2:
     if(autopay == 'Yes'):
         f = 1
     num_services = st.radio("Num services ",[1,2,3,4,5,6])
-    satisfaction_score = st.slider("Rating ",1.0,10.0,0.1)
+    satisfaction_score = st.slider("Rating ",1.0,10.0,1.0,0.1)
 
 
 with col3:
@@ -134,7 +134,7 @@ if(button):
                 st.markdown("Likely to Stay on the platform")
         elif(threshold <= 70):
                   st.markdown("Customer Leaving Chance : High 🔴")
-                  st.mardown("Likely to Churn")
+                  st.markdown("Likely to Churn")
     with col8:
          plt.pie(prob[0],autopct = '%0.1f%%',labels = ['Probablity of not churn','Probablity of churn'])
          st.pyplot(plt.gcf(),width = 400)
