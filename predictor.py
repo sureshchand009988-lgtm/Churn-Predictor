@@ -24,7 +24,7 @@ Enter customer details to evaluate their likelihood of leaving the platform.
 Our machine learning model analyzes **account information, usage patterns, and subscription details** to estimate churn probability and classify the customer's risk level.
 """)
 with col8:
-    st.image(r"C:\Users\chato\Downloads\Customer Churn Analytics Icon.png")
+    st.image('Customer Churn Analytics Icon.png')
 with st.expander("About the different parameter in the prediction"):
     st.markdown('''### Customer Usage & Account Details
 
