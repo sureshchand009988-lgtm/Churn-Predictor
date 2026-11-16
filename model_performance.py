@@ -26,7 +26,7 @@ with zipfile.ZipFile(model_path, 'r') as z:
         model = pickle.load(file)
 
 #model performance
-df = pd.read_csv(os.path.join(os.path.dirname(__file__),'cutstomer_churn.csv'))
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), 'customer_churn.csv'))
 df = df.drop(columns = ['customer_id'])
 
 x = df.drop(columns = ['churn'])
