@@ -13,7 +13,7 @@ st.set_page_config(
     layout="wide"
 )
 #model
-model_path = os.path.join(os.path.dirname(__file__),'..',r"C:\Users\chato\Downloads\customer_churn_predict.zip")
+model_path = os.path.join(os.path.dirname(__file__),'..','customer_churn_predict.zip')
 with open(model_path,'rb') as file:
     model = pickle.load(file)
 
