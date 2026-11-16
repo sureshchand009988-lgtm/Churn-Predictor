@@ -6,10 +6,7 @@ import streamlit as st
 st.title("Customer Churn Predictor")
 
 # Banner image
-st.image(
-  r"C:\Users\chato\Downloads\churn_models_blend.png",
-    width=15,use_container_width = True
-)
+st.image("churn_models_blend.png", use_container_width=True)
 
 st.subheader("Welcome to Customer Churn Analytics!")
 st.markdown('Explore customer data, evaluate machine learning models, and predict customer churn to gain valuable insights into customer retention and business performance.')
